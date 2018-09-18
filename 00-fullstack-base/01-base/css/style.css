@@ -11,65 +11,85 @@ body {
 a {
     text-decoration: none; /* define algum tipo de decoração no texto. Valores: overline, line-through, underline, underline overline */
 }
-
-img {
-    width: 85%; /* define o comprimento */
+header{
+    margin-top: 80px;
 }
-
 /* FONTS */
-h1 {
-    text-align: right; /* define o alinhamento do texto */
-    font-size: 35px; /* define o tamanho da fonte. Unidades possíveis são px, em, rem, entre outros */
-    text-transform: uppercase; /*define alguma mudança na própria fonte. Valores possíveis: lowercase, uppercase, capitalize */
+h1 {    
+    text-align: center; /* define o alinhamento do texto */
+    font-size: 30px; /* define o tamanho da fonte. Unidades possíveis são px, em, rem, entre outros */
 }
 
-h2 {
+h2{
+    font-size: 35px;
+}
+
+h2, h3 {
     text-align: right;
 }
 
-p {
+/* UTILITIES */
+
+
+.sobre{
+    display:flex;
+    width: 960px;
+    margin: 0 auto; /* macete para deixar elementos block centralizados */
+    margin-top: 100px;
+}
+
+.conteudo{
+    width: 45%;
+}
+
+.textos p {
     width: 430px;
     margin-bottom: 110px;
     text-align: right;  
 }
 
-/* UTILITIES */
-.u-margin-small {
-    margin: 5px;
-}
-
-.sobre-conteudo {
-    width: 45%;
-    display: inline-block;
-}
-
-.sobre-imagem {
-    width: 45%;
-    display: inline-block;
-}
-
-.section-sobre {
-   width: 960px;
-   margin: 0 auto; /* macete para deixar elementos block centralizados */
-   margin-top: 100px;
-}
-
-.sobre-conteudo__botoes {
+.botoes {
     text-align: right; /* esse tipo de alinhamento para botões não funciona se for colocado diretamente no elemento <a>. Deve-se colocar essa propriedade no elemento mãe */
 }
 
 .btn {
     padding: 10px 12px;
     font-size: 16px;
+    cursor: pointer;
 }
 
-.a {
+
+.download {
     background-color: #5d1277;
-    color: white; /* define a cor do conteúdo do elemento */
+    border: none;
 }
 
-.b {
-    color: #5d1277;
+.download a{
+    color: white;
+}
+
+.readMore {
+    margin: 5px;
     border: 1px solid #5d1277; /* cria uma borda no elemento. Ordem de valores: grossura-da-borda tipo-da-borda cor-da-borda. */
+    background-color: transparent;
+}
+
+.readMore a{
+    color:  #5d1277;
+}
+
+img{
+    width: 85%;
+}
+
+.phone {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.phone p{
+    text-align: center;
 }
 
